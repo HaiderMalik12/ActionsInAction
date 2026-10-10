@@ -1,0 +1,17 @@
+name: Hello Actions
+
+# Github wants to know how you want to run your workflow
+# Nothing happens until something triggers. Think of it is an alarm clock
+# You can program what it does, but it only rings when set time on
+# on could be push, pull_request, schedule, workflow_dispatch manual deploy
+on: push
+
+# Start the list of jobs
+jobs:
+  # say hello is the job id
+  say-hello:
+    # Do you want to run on Linux, Windows, Mac
+    # If your app is deployed to Linux, Cheapest and fastest
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Github Actions"
