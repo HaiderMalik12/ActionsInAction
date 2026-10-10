@@ -16,10 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Hello Github Actions"
-
-      - name: Fail on purpose
-        run: exit 1
+        run: echo "Hello Github Actions
 
       - name: Show the date
         run: date
