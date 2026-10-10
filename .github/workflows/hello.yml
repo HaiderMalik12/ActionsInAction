@@ -12,6 +12,8 @@ jobs:
   say-hello:
     # Do you want to run on Linux, Windows, Mac
     # If your app is deployed to Linux, Cheapest and fastest
+    # It has prepared the fresh ubuntu machine for me
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello Github Actions"
+      - name: Say Hello
+        run: echo "Hello Github Actions"
